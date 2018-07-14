@@ -11,7 +11,7 @@ function getFirstSelector(selector) {
 function increaseRankBy(n) {
   const lists = document.querySelectorAll('.ranked-list');  
   
-  for (let j = 0; j < 2; j++) {
+  for (let j = 0; j < 2; lists.length) {
     for (let i = 0; i < lists[j].children.length; i++) {  
       lists[j].children[i].innerHTML = parseInt(lists[j].children[i].innerHTML) + n;
       console.log('list[' + j + '] children [' + i + '] is equal to ' + lists[j].children[i].innerHTML )
